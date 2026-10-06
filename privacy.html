@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy information for a locally operated Rclone Google Drive OAuth client.">
+  <title>Privacy Notice — Rclone Local File Access</title>
+  <style>
+    :root { color-scheme: light dark; font: 16px/1.6 system-ui, sans-serif; }
+    body { max-width: 54rem; margin: 3rem auto; padding: 0 1.25rem; }
+    nav, footer { margin-top: 2rem; border-top: 1px solid #8886; padding-top: 1rem; }
+    h1, h2 { line-height: 1.25; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Notice</h1>
+    <p><strong>Last updated:</strong> 6 October 2026.</p>
+    <p>This notice describes a locally operated Rclone OAuth client used by its owner to access Google Drive. The static website hosting this notice does not accept Google Drive data, OAuth tokens, or passwords.</p>
+
+    <h2>Data and permissions</h2>
+    <p>The OAuth configuration requests the Google Drive scope <code>https://www.googleapis.com/auth/drive</code>, which grants broad access to the authorizing Google account's Drive. Rclone may process file names, folder paths, sizes, modification times, and file contents when the operator runs commands or local automation. Operations may include reading, creating, updating, moving, renaming, or deleting files, depending on the command used.</p>
+
+    <h2>How information is handled</h2>
+    <ul>
+      <li>Rclone sends the API requests needed for the operation to Google. Google processes that information under Google's own terms and privacy notices.</li>
+      <li>OAuth tokens are stored in the local Rclone configuration on the operator's computer. File metadata may be stored in a local search index. File contents may be cached locally when read or written, subject to the local Rclone cache settings.</li>
+      <li>Local agents or software explicitly configured by the operator may access files available through the local Rclone mount. The operator controls that machine and its local access.</li>
+      <li>This website is a static information site; it has no server-side Drive integration and does not receive Drive contents or OAuth tokens. GitHub hosts the static pages and may process ordinary website visitor requests under GitHub's privacy terms.</li>
+    </ul>
+
+    <h2>Sharing and retention</h2>
+    <p>This setup is intended for the account owner or an account holder who independently chooses to authorize and configure their own Rclone use. Authorizing the OAuth client does not publish or share Drive files. Local tokens remain until removed or revoked. Local metadata and cached content remain according to the operator's local index and cache settings, until refreshed, evicted, or deleted.</p>
+
+    <h2>Choices and revocation</h2>
+    <p>An account holder can revoke the app's Google access in their Google Account security settings under third-party connections. The operator can also stop Rclone and remove its local token, index, and cache. Revoking access does not automatically remove copies already downloaded or cached locally; those must be cleared from the local machine.</p>
+
+    <h2>Security</h2>
+    <p>Local configuration files contain sensitive OAuth credentials and should be protected by the computer's access controls and disk security. No security method is guaranteed, so credentials should not be published or shared.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this local setup: <a href="mailto:s.m.wood.prodcom@gmail.com">s.m.wood.prodcom@gmail.com</a>.</p>
+    <nav><a href="index.html">Overview</a> · <a href="terms.html">Terms of use</a></nav>
+  </main>
+</body>
+</html>
